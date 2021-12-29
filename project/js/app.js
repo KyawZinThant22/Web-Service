@@ -7,4 +7,4 @@ $(".navbar-toggler").click(function (){
     }else {
         $(".menu-icon").removeClass(".fa-bars").addClass("fa-times")
     }
-})
+});
