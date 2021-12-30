@@ -5,8 +5,69 @@
         
         body {
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
-        
+
+
+
+        .ani-delay-1{
+            animation-delay: 0.5s;
+        }
+
+        .ani-delay-2{
+            animation-delay: 1s;
+        }
+
+        .ani-delay-3{
+            animation-delay: 1.5s;
+        }
+        .ani-delay-4{
+            animation-delay: 2s;
+        }
+        .ani-delay-5{
+            animation-delay: 2.5s;
+        }
+
+
+        .social-badge{
+            position: absolute;
+            bottom: 50px;
+            left: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-badge a{
+            margin-bottom: 10px;
+            transition: 0.5s;
+        }
+
+
+
+        .social-badge a:hover{
+            transform: scale(1.5);
+        }
+
+        .mouse-function{
+            position: absolute;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            /*border: 1px solid black;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 38px;
+        }
+
+        .mouse-img{
+            width: 17px;
+        }
+
         .site-nav {
             position: absolute;
             top: 0;
@@ -23,7 +84,7 @@
         }
         
         .about-section,
-        .service-section ,.card-color,.purchase-section{
+        .service-section ,.card-color,.purchase-section,.card-for-shape,.contact-section,.form-control{
             background-color: #f2f2f2;
             background-size: 100%;
         }
@@ -164,6 +225,47 @@
         .fa-arrow-right{
             color: black;
         }
+
+        .static-site{
+            position: relative;
+        }
+
+        .shape-2{
+            width: 764px;
+            height: 280px;
+            background-color: #db545a;
+        }
+
+        .shape-2-image{
+            position: absolute;
+            top: -1px;
+            background-color: white;
+            width: 509px;
+            left: 110px;
+        }
+
+        .card-for-shape{
+            border-radius: 10px;
+            position: absolute;
+            top: -49px;
+            left: 662px;
+        }
+
+        .shape-3{
+            height: 250px;
+            background-color: #db545a;
+        }
+
+        .contact-card{
+            position: absolute;
+            top: -51px;
+            left: 150px;
+            border-radius: 10px;
+        }
+
+        .contact-text:hover{
+            color: #db545a;
+        }
         
         @media screen and (max-width: 576px) {
             .navbar-nav {
@@ -245,4 +347,56 @@
                 margin-bottom: 20px;
             }
 
+            .shape-2{
+                width: 380px;
+
+            }
+
+            .shape-2-image{
+                width: 307px;
+                /* right: -22px; */
+                left: 52px;
+            }
+
+            .card-for-shape{
+                left: 24px;
+                top: 337px;
+
+                margin-top: 50px;
+            }
+
+            .static{
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-top: 50px;
+                padding-top: 50px;
+            }
+
+            .for-static-height{
+                height: 916px !important;
+            }
+
+            .contact-card{
+                left: 14px;
+                width: 389px !important;
+            }
+
+            .contact-section{
+                height: 1000px;
+            }
+
+
+            .mouse-function{
+                margin: 0;
+                left: auto;
+                right: 13px;
+                bottom: -88px;
+            }
+            .social-badge{
+                bottom: -32px;
+                left: auto;
+                right: 32px;
+            }
         }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../mycss/my.css">
     <link rel="stylesheet" href="vendor/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="vendor/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -18,14 +19,14 @@
 <body>
 
     <!--Navbar-Start-->
-    <div class="container-fluid site-nav  ">
+    <div class="container-fluid site-nav animated slideInDown  ">
         <div class="row">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="">
                             <nav class="navbar navbar-expand-lg navbar-light ">
-                                <a class="navbar-brand" href="#">
+                                <a class="navbar-brand wow hinge" href="#">
                                     <img src="images/default-logo.png" alt="">
                                 </a>
                                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,21 +69,42 @@
 
     <!--Home-Section-Start-->
     <div class="container home-section">
-        <div class="row min-vh-100 align-items-center">
-            <div class="col-12 col-md-6">
-                <div class="p-2 p-md-5 text-center text-md-left">
-                    <h1 class="text-primary w-100 font-weight-bolder home-text display-4 mb-0">One-click <br class="d-none d-md-block"> solution for your static? website.</h1>
+        <div class="row min-vh-100 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 animated slideInLeft ani-delay-1">
+                <div class="p-2 p-md-5 text-center text-md-left pb-5 pb-md-0">
+                    <h1 class="text-primary w-100 font-weight-bolder home-text display-4 mb-0 pt-0">One-click <br class="d-none d-md-block"> solution for your static? website.</h1>
                     <p class="mt-4 text-center text-md-left">Image from Freepik</p>
 
-                    <button class="btn btn-primary  p-2 px-3 btn-home mb-4 mb-md-0 ">
+                    <button class="btn btn-primary  p-md-2 px-3 btn-home mb-4 mb-md-0 animated fadeIn ani-delay-3 ">
                         <i class="fas fa-upload font-weight-bolder h4 mb-0 mr-0"> <span class="text-light h6 font-weight-bold"> Upload for Free</span></i>
                     </button>
-                    <button class="btn btn-secondary p-2  px-4 ml-md-5 text-center btn-home ">
+                    <button class="btn btn-secondary p-2  px-4 ml-md-5 text-center btn-home animated fadeIn ani-delay-3">
                         <i class="fab fa-youtube font-weight-bolder text-light h4 mb-0"> <span class="text-dark h6 font-weight-bold"> Watch Video</span></i>
                     </button>
                 </div>
             </div>
-            <div class="col-12 col-md home-image">
+
+            <div class="social-badge animated slideInLeft ani-delay-3">
+                <a href="">
+                    <i class="fab fa-facebook-f text-primary "></i>
+                </a>
+
+                <a href="">
+                    <i class="fab fa-google "></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram "></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-twitter "></i>
+                </a>
+
+                <a  class="bg-primary" style="width: 5px;height: 25px"></a>
+            </div>
+            <a href="#about" class="mouse-function shadow p-4 animated fadeIn ani-delay-3" >
+                <img src="images/mouse.svg" class="mouse-img animated bounce" alt="" style="animation-iteration-count: infinite">
+            </a>
+            <div class="col-12 col-md home-image animated slideInRight ani-delay-2">
                 <div class="">
                     <img src="images/xcc-min.png" class="w-100 mt-5 mt-md-0" alt="">
                 </div>
@@ -92,19 +114,19 @@
     <!--Home-Section-End-->
 
     <!--    About-Section-Start-->
-    <div class="container-fluid about-section">
+    <div class="container-fluid about-section" id="about">
         <div class="row pb-5 ">
             <div class="row">
-                <div class="col-12 col-md-5 mt-md-5 pt-md-5  ">
-                    <div class="mt-5 pt-5 px-5 about-first-section">
+                <div class="col-12 col-md-5 mt-md-5 pt-md-5 ">
+                    <div class="mt-5 pt-5 px-5 about-first-section wow slideInLeft ">
                         <h1 class="text-primary font-weight-bold display-4 mb-5">Hosting solution with benefits.</h1>
                         <p class="text-dark h3 ">Turn your ideas into reality with Static. With a lot of powerful features, we guarantee simplicity and clarity.</p>
-                        <button class="btn btn-primary p-3 mt-4 px-5 font-weight-bold h3 about-btn">Read More</button>
+                        <button class="btn btn-primary p-3 mt-4 px-5 font-weight-bold h3 about-btn ">Read More</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-7">
                     <div class="row mt-5 ml-md-5 about-reponsive px-3 px-md-0">
-                        <div class="col-12 col-md-5 ">
+                        <div class="col-12 col-md-5 wow fadeInUp ani-delay-1">
                             <div class="">
                                 <div class="card shadow mb-3 ">
                                     <div class="card-body py-5">
@@ -122,7 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-5">
+                        <div class="col-12 col-md-5 wow slideInRight ani-delay-2">
                             <div class="">
                                 <div class="card  shadow mb-3">
                                     <div class="card-body py-5">
@@ -140,7 +162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-5">
+                        <div class="col-12 col-md-5 wow fadeInDown ani-delay-3">
                             <div class="">
                                 <div class="card shadow mb-3 pt-3 ">
                                     <div class="card-body py-3 ">
@@ -158,7 +180,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-5">
+                        <div class="col-12 col-md-5 wow slideInRight ani-delay-4">
                             <div class="">
                                 <div class="card shadow last-card ">
                                     <div class="card-body py-4">
@@ -187,19 +209,19 @@
     <!--About-Section-End-->
 
     <!-- Service-Section-Start -->
-    <section class="container-fluid service-section">
+    <section class="container-fluid service-section wow  ani-delay-4">
         <div class="">
             <div class="container">
                 <div class="row pt-5 service-responsive">
                     <div class="col-12">
                         <div class="shape "></div>
                     </div>
-                    <div class="service-image">
+                    <div class="service-image wow slideInLeft ani-delay-1">
                         <img src="images/uuu.png" class="service-image-img" alt="">
                     </div>
-                    <div class="circle-shape"></div>
+                    <div class="circle-shape wow fadeIn slideInLeft"></div>
 
-                    <div class="card-section">
+                    <div class="card-section wow slideInRight">
                         <div class="card border-0 p-3 shadow-sm">
                             <div class="card-body">
                                 <h1 class="text-primary font-weight-bolder w-75 mb-4">Create Amazing Website</h1>
@@ -222,7 +244,7 @@
             <div class="container">
                 <div class="row mt-5">
                     <div class="col-12">
-                        <div class="text-center">
+                        <div class="text-center wow slideInDown">
                             <p class="h4">TESTIMONIALS</p>
                             <h1 class="text-primary font-weight-bolder display-4 mb-4">What Clients Say</h1>
                             <p class="h5 mb-5" style="line-height: 1.5;">We place huge value on strong relationships and have seen the benefit they <br> bring to our business. Customer feedback is vital in helping us to get it right.</p>
@@ -230,7 +252,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-3 ">
+                    <div class="col-12 col-md-3 wow slideInLeft ani-delay-1 ">
                         <div class="card card-color p-3">
                             <div class="card-body">
                                 <div class="text-center">
@@ -242,7 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 ">
+                    <div class="col-12 col-md-3  wow slideInLeft ani-delay-2">
                         <div class="card card-color p-3">
                             <div class="card-body">
                                 <div class="text-center">
@@ -254,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 ">
+                    <div class="col-12 col-md-3 wow slideInRight ani-delay-3">
                         <div class="card card-color p-3">
                             <div class="card-body">
                                 <div class="text-center">
@@ -266,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 ">
+                    <div class="col-12 col-md-3  wow slideInRight ani-delay-4">
                         <div class="card card-color p-3">
                             <div class="card-body">
                                 <div class="text-center">
@@ -290,15 +312,15 @@
 
 <!--    Purchase-Section-Start-->
 
-    <div class="container-fluid purchase-section">
+    <div class="container-fluid purchase-section wow s">
         <div class="row pb-5 ">
             <div class="container">
                 <div class="row " >
-                    <div class="col-12 col-md-6 pt-md-5 p-4 pt-5">
-                        <h1 class="font-weight-bolder mt-md-5">Purchase</h1>
+                    <div class="col-12 col-md-6 pt-md-5 p-4 pt-5  wow fadeIn ani-delay-1">
+                        <h1 class="font-weight-bolder mt-md-5 wow tada ani-delay-2">Purchase</h1>
                         <h4 class="mt-5 purchase-text ">Start using static.app as a hosting for your websites today to get the best features to buck ratio on the market.</h4>
                     </div>
-                    <div class="col-12 col-md-6 pt-md-5 p-4 ">
+                    <div class="col-12 col-md-6 pt-md-5 p-4  wow fadeIn ani-delay-1">
                         <div class="row mt-md-5">
                             <div class="col-12 col-md-6 pt-md-5 mt-md-5 ">
                                <div class="">
@@ -318,7 +340,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row pricing-slide ">
+                <div class="row pricing-slide wow  fadeInUp ani-delay-2 ">
                     <div class="col-12 col-md-4">
                         <div class="">
                             <div class="card card-purchase bg-primary p-3">
@@ -492,16 +514,117 @@
 
 <!--        Purchase-Section-End-->
 
+<!--Static-Page-Start-->
+    <div class="container-fluid static-site">
+        <div class="row ">
+            <div class="container">
+                <div class="row mt-md-5 pt-md-5">
+                    <div class="col-12 static">
+                       <div class="for-static-height" style="height: 500px">
+                           <div class="shape-2"></div>
+                           <img src="images/xcxcxcxc-min.png" class="shape-2-image wow slideInLeft ani-delay-1 " alt="">
+                           <div class="card p-md-5  py-5 py-md-0 card-for-shape shadow wow slideInRight ani-delay-2">
+                               <div class="">
+                                   <div class="card-body ">
+                                       <h1 class="text-primary font-weight-bolder display-4" style="width: 320px">Get started with the simpliest static page</h1>
+                                       <p class="my-4 text-center text-md-left">Image from Freepik</p>
+
+                                       <button class="btn btn-primary mt-4  p-2 px-3 btn-home mb-4 mb-md-0 ml-5 ml-md-0">
+                                           <i class="fas fa-upload font-weight-bolder h4 mb-0 mr-0"> <span class="text-light h6 font-weight-bold"> Upload for Free</span></i>
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Static-Page-End-->
+
+
+<!--    Contact-Section-start-->
+
+    <div class="container-fluid contact-section ">
+        <div class="row mt-5  vh-100 align-items-center ">
+            <div class="col-12 px-0">
+                <div class="">
+                    <div class="shape-3 w-100"></div>
+                    <div class="contact-from wow fadeIn ">
+                        <div class="card w-75 contact-card p-4 ">
+                            <div class="card-body">
+                                <div class="row ">
+                                    <div class="col-12 col-md-6">
+                                        <h1 class="font-weight-bolder">Contact Info</h1>
+                                        <i class="fas fa-phone-alt text-primary fa-2x pt-4 mr-3"></i><span class="h5 contact-text" > +1 (234) 567-8910 </span> <br>
+                                        <i class="fa fa-envelope  fa-2x text-primary mr-3 mt-4"></i><span class="h5 contact-text">contact@yourmail.com </span> <br>
+                                        <i class="fas fa-map-marker-alt  fa-2x text-primary mr-3 mt-4"></i></i><span class="h5 contact-text">203, Envato Labs, Behind Alis Steet, Australia</span>
+                                        <div class="mt-4 d-flex align-items-center">
+                                            <i class="fab fa-facebook text-primary fa-2x mr-3"></i>
+                                            <i class="fab fa-twitter text-primary fa-2x mr-3"></i>
+                                            <i class="fab fa-instagram text-primary fa-2x mr-3"></i>
+                                            <i class="fab fa-youtube text-primary fa-2x mr-3"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-5 mt-md-0">
+                                        <form action="#">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control " placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea type="text" class="form-control" rows="5" placeholder="Message"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-primary w-100">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Contact-Section-End-->
+
+
+
+<!--    footer-->
+
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-12 p-5">
+                    <div class="text-center">
+                        <p class="text-light">Sample text. Click to select the text box. Click again or double <br> click to start editing the text.</p>
+
+                        <h5 class="text-primary my-5">Coded By Kyaw Zin Thant</h5>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!--    footer-->
+
+
+
 
 
     <script src="js/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="vendor/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
-
+    <script src="vendor/wow/wow.js"></script>
     <script src="js/app.js"></script>
 
 
     <script>
+        new WOW().init()
         $('.pricing-slide').slick({
             dots: true,
             arrows:false,
