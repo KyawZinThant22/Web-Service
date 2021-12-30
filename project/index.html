@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
 
+
+<div class=" loader-container"           >
+    <div class="loader">Loading...</div>
+</div>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -19,7 +24,7 @@
 <body>
 
     <!--Navbar-Start-->
-    <div class="container-fluid site-nav animated slideInDown  ">
+    <section class="container-fluid site-nav animated slideInDown  ">
         <div class="row">
             <div class="container">
                 <div class="row">
@@ -36,22 +41,25 @@
                                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                                     <ul class="navbar-nav text-uppercase  ">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Home</a>
+                                            <a class="nav-link" href="#home">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">About us</a>
+                                            <a class="nav-link" href="#about">About</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Service</a>
+                                            <a class="nav-link" href="#service">Service</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Review</a>
+                                            <a class="nav-link" href="#client">Review</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Purchase</a>
+                                            <a class="nav-link" href="#purchase">Purchase</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Contact us</a>
+                                            <a class="nav-link" href="#sample">Sample</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#contact">Contact us</a>
                                         </li>
 
                                     </ul>
@@ -63,12 +71,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--Navbar-End-->
 
 
     <!--Home-Section-Start-->
-    <div class="container home-section">
+    <section id="home" class="container home-section">
         <div class="row min-vh-100 align-items-center flex-column-reverse flex-md-row">
             <div class="col-12 col-md-6 animated slideInLeft ani-delay-1">
                 <div class="p-2 p-md-5 text-center text-md-left pb-5 pb-md-0">
@@ -110,11 +118,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--Home-Section-End-->
 
     <!--    About-Section-Start-->
-    <div class="container-fluid about-section" id="about">
+    <section id="about" class="container-fluid about-section" id="about">
         <div class="row pb-5 ">
             <div class="row">
                 <div class="col-12 col-md-5 mt-md-5 pt-md-5 ">
@@ -205,11 +213,11 @@
 
             </div>
         </div>
-    </div>
+    </section>
     <!--About-Section-End-->
 
     <!-- Service-Section-Start -->
-    <section class="container-fluid service-section wow  ani-delay-4">
+    <section id="service" class="container-fluid service-section wow  ani-delay-4">
         <div class="">
             <div class="container">
                 <div class="row pt-5 service-responsive">
@@ -239,7 +247,7 @@
 
 
     <!-- Client-Review-Start -->
-    <div class="container-fluid">
+    <section id="client" class="container-fluid">
         <div class="row">
             <div class="container">
                 <div class="row mt-5">
@@ -306,13 +314,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Cleint-Review-End -->
 
 
 <!--    Purchase-Section-Start-->
 
-    <div class="container-fluid purchase-section wow s">
+    <section id="purchase" class="container-fluid purchase-section wow s">
         <div class="row pb-5 ">
             <div class="container">
                 <div class="row " >
@@ -510,12 +518,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <!--        Purchase-Section-End-->
 
 <!--Static-Page-Start-->
-    <div class="container-fluid static-site">
+    <section id="sample" class="container-fluid static-site">
         <div class="row ">
             <div class="container">
                 <div class="row mt-md-5 pt-md-5">
@@ -540,13 +548,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 <!--Static-Page-End-->
 
 
 <!--    Contact-Section-start-->
 
-    <div class="container-fluid contact-section ">
+    <section id="contact" class="container-fluid contact-section ">
         <div class="row mt-5  vh-100 align-items-center ">
             <div class="col-12 px-0">
                 <div class="">
@@ -590,7 +598,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <!--    Contact-Section-End-->
 
@@ -598,7 +606,7 @@
 
 <!--    footer-->
 
-    <div class="container-fluid bg-dark">
+    <section class="container-fluid bg-dark">
         <div class="row">
             <div class="col-12 p-5">
                     <div class="text-center">
@@ -608,7 +616,7 @@
                     </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <!--    footer-->
 
@@ -620,6 +628,7 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="vendor/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
     <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
     <script src="js/app.js"></script>
 
 
