@@ -3,7 +3,7 @@
 This web template is from Nice Page website which provide Template
 
 
-Demo site : <a href="https://hardcore-brattain-4cf95d.netlify.app/#home">Here</a>
+Demo site : <a href="https://compassionate-pasteur-32e784.netlify.app/">Here</a>
 
 <h2> Preview <h2>
 
